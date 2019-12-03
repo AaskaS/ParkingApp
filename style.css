@@ -1,0 +1,455 @@
+/*This files handles all formatting aspects of the webpages. Whether it's the font, the background, or the overall look&feel*/
+
+/*fonts that may be used for the webpages*/
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Shadows+Into+Light+Two|Boogaloo|BenchNine|Rancho|Pangolin|Merienda+One|Oswald:300');
+/*min-height constrains the height of elements*/
+html{
+	min-height: 100%;
+}
+body {
+
+	text-align: center;
+	min-height: 100%;
+	background: black;
+	}
+/*The background format that is used on the Welcome page*/
+.background {
+	background: url('https://images.pexels.com/photos/9044/pexels-photo.jpg');
+ 	height: 100vh;
+	overflow:auto;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	  	
+}
+
+/*Only for the front page is the h1 tag different than the rest of the pages*/
+.h1Frontpage {
+	font-family: 'Oswald', sans-serif;
+	font-size: 80px;
+	text-align: center;
+	margin-top: 50px;
+	font-weight: bold;
+	}
+
+/*The h1 tag is global for all of the pages, ensure a more encompassing look*/
+.h1Global {
+	font-family: 'Dancing Script', cursive;
+	font-size: 80px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	color: white;
+}
+
+/*defaulting the look for the h3 tag*/
+h3 {
+	font-family: 'Shadows Into Light Two', cursive;
+	margin-bottom: 30px;
+	font-size: 50px;
+}
+
+/*the format of the navigation bar on all the user specific pages*/
+.nav{
+	font-size: 30px;
+	font-family: 'Boogaloo', cursive;
+	position: relative;
+	text-align: center;
+	color: blue;
+	margin-bottom: 50px;
+
+
+}
+
+/* the <div> tag specific to the parking spot pages (parkingspot2.html & parking.html) so their internal format stays the same*/
+.parkingdiv{
+	float: left;
+	margin-left: 15%;
+}
+
+/*the <div> tag specified for the profile pages (userprofile.html & publicprofile.html) so the label & span are lined up*/
+.div{
+	display: inline-block;
+}
+
+/*defaulting the form tag so all forms follow the same sizing*/
+form{
+	font-size: 25px;
+	display: inline-block;
+}
+/*most webpages use the same label formatting except for the front page (welcome.html - .labelFront),
+	parking spot pages (parkingspot2.html & parking.html - .parkinglabel), and the profiles (userprofile.html & publicprofile.html - .profilelabel) */
+.label{
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 22px;
+	float: left;
+	text-align: left;
+	color: white;
+
+}
+.parkinglabel{
+	color: white;
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 20px;
+
+			}
+.labelFront{      
+	width:210px;
+	margin-top: 100px;
+	font-family: 'Boogaloo', cursive;
+}
+
+				
+
+.profilelabel{
+	color: white;
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 2vh;
+	margin-left 100px;
+	height: 5vh;
+	text-align: left;
+	margin-bottom: 5vh;
+	margin-right: 5vw;
+
+}
+
+/*used in profile pages (userprofile.html & publicprofile.html) for inline element purposes, so that it can be
+	 inline with the label element for a more symmetrical look*/
+.span{
+	color: white;
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 2vh;
+	height: 5vh;
+	width: 15vw;
+	margin-bottom: 5vh;
+	margin-right: 2vw;
+	float: right;
+	text-align: right;
+}
+
+.spanErr{
+	color: white;
+	font-size: 12px;
+}
+
+/*most webpages use the same input formatting except for a different type of input that may 
+	exist such as textarea for any webpage that contains writing a description (submission.html),
+	slide-wrapper for search.html that includes choosing a range */
+
+.input{
+	font-family: 'Shadows Into Light Two', cursive;
+	background: black;
+	color: white;
+	height: 40px;
+	font-size: 20px;
+	width: 25vw;
+	float: right;
+	margin-left: 5vw;
+	text-align: center;
+}
+   
+.textarea{
+	font-family: 'Shadows Into Light Two', cursive;
+	background: black;
+	color: white;
+	height: 70px;
+	font-size: 2vh;
+	width: 25vw;
+	float: right;
+	margin-left: 5vw;
+	text-align: left;
+}
+
+.slide-wrapper {
+	font-family: 'Shadows Into Light Two', cursive;
+	width: 25vw;
+	height: 5vh; 
+	float: right;
+	text-align: right;
+	
+
+}
+
+/*this is used in search.html to show the (hardcoded) price output resulting from the slider*/
+.output{
+	font-family: 'Shadows Into Light Two', cursive;
+	color: white;
+	float: right;
+	text-align: center;
+	margin-left: 250px;
+}
+
+/*the p tag generally global format when used except for the welcome.html page*/
+.p{
+	color: white;
+	font-family: 'Shadows Into Light Two', cursive;
+	float: left;
+	margin-top: 1%;
+	clear: left;
+
+}
+
+.pFront {
+	font-family: 'Boogaloo', cursive;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+/*button format for the welcome.html "SignUp" and "SignIn" */
+.buttonLab{
+	color: white;
+	font-size: 20px;
+}
+
+/*signout button format that exists in all pages once user has logged in*/
+.signout{
+	background-color: green;
+	float: right;
+	border-radius: 8px;
+	border: none;
+	width: 100px;
+	height: 45px;
+	font-size: 20px;
+	font-family: 'Shadows Into Light Two', cursive;
+	clear: right;
+
+}	
+
+/*general purpose buttons*/
+.button{
+	background-color: #4CAF50;	
+	border-radius: 8px;
+	border: none;
+	width: 200px;
+	height: 45px;
+	font-size: 20px;
+	font-family: 'Shadows Into Light Two', cursive;
+	margin-top: 50px;
+
+}
+.button2{
+	background-color: #4CAF50;	
+	border-radius: 8px;
+	border: none;
+	width: 200px;
+	height: 45px;
+	font-size: 20px;
+	font-family: 'Shadows Into Light Two', cursive;
+	margin-top: 50px;
+	margin-bottom: 10px;
+
+}
+.complete{
+	background-color: #4CAF50;	
+	border-radius: 8px;
+	border: none;
+	width: 200px;
+	height: 45px;
+	font-size: 20px;
+	font-family: 'Shadows Into Light Two', cursive;
+	margin-top: 50px;
+
+}
+
+/*button format used in parking pages (parking.html & parkingspot2.html)*/
+.requestparking{
+	float: left;
+	margin-top: 3%;
+	clear: left;
+	background-color: #4CAF50;	
+	border-radius: 8px;
+	border: none;
+	width: 200px;
+	height: 45px;
+	font-size: 20px;
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
+/*hidden button used for all footers (for profile-home icon)*/
+.parkButton{
+	background-color: transparent;
+	border: none;
+
+}
+		
+/*button format used for requests.html (Accept/Reject)*/
+.reButton{
+	background-color: #4CAF50;
+	border-radius: 8px;
+	border: none;
+	width: 50px;
+	height: 45px;
+	font-size: 10px;
+	font-family: 'Shadows Into Light Two', cursive;
+
+}		
+
+/*formatting is kept consistent for all tables that may show up on the webpages*/
+.table{
+	font-family: 'Shadows Into Light Two', cursive;
+	width: 75%;
+	background: black;
+	color: white;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid white;
+}
+
+.th{
+	font-family: 'Shadows Into Light Two', cursive;
+	color: white;
+	border: 1px solid white;
+	padding: 1vw;
+	padding-right: 2vw;
+	padding-left: 2vw;
+	text-align: center;
+
+}
+
+.td {
+	font-family: 'Shadows Into Light Two', cursive;
+	color: white;
+	border: 1px solid white;
+	text-align: center;
+	padding: 1vw;
+}  	
+
+/*formatting for the different icons that may be found on the pages*/
+
+/*formats the star icon for ratings on the parking pages (parking.html & parkingspot2.html)*/
+.i {
+	color: yellow;
+	font-size: 25px;
+
+}
+
+/*formats the dot-separater that exists in the navigation bar*/
+.dot{
+	font-size: 15px;
+	color: green;
+	margin-left: 5px;
+
+}
+
+/*formats the profile-home icon at the footer of the screen*/
+.pi {
+	left: 0;
+	bottom: 0;
+	text-align: right;
+	width: 100%;
+	color: white;
+	color: green;
+	font-size: 50px;
+	clear: both;
+ }
+
+/*formats the icon that shows up as a person's image for the review portion of parking.html & parkingspot2.html*/
+.car{
+	font-size: 25px;
+	padding: 15px;
+	border-radius: 50%;
+	background-color: gray;
+	float: left;
+	margin-top: 3vh;
+	clear: left;
+
+}
+
+/*additional formatting for the ratings on the parking.html & parkingspot2.html page*/
+.parkingreviewI{
+	float: left;
+	margin-top: 5vh;
+
+
+}
+/*formatting for the icon found in results.html*/
+.reviewI{
+	color: yellow;
+	margin-top: 2vh;
+ }
+
+ .resultRev{
+ 	color: yellow;
+ }
+
+/*formatting for the button found in pastspots.html*/
+.pasti{
+	color:yellow;
+} 
+
+/*ensures the reviews show up in a uniformed sequence (parking.html & parkingspot2.html*/
+.reviewList{
+
+	margin-top: 55vh;
+	margin-left: 2vw;
+
+}
+
+/*all footers in the webpages maintain the same format*/
+.footer{
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	text-align: center;
+	clear: both;
+
+}
+
+
+/*all links in the webpage maintain the same format*/
+a{
+  color: pink;
+}
+		
+		
+/*the formatting found for the images that are in the webpages (does not include the welcome.html background)*/
+
+/*formats the map found in parking.html */
+.parkinglocation{
+	width: 45vw;
+	height: 35vh;
+	float: right;
+	margin-right: 10%;
+	margin-bottom: 5vh;
+
+}
+/*formats the image found in parking.html*/
+.img{
+	width: 25%;
+	height: 25%;
+	float: left;
+	margin-left: 15%;
+	clear: left;
+	color: white;
+
+}
+/*formats the map found in parkingspot2.html*/
+.location{
+	width: 45vw;
+	height: 35vh;
+	float: left;
+	margin-left: 15%;
+	clear: left;
+}
+
+
+/*formats the map in results.html*/
+.resultimg{
+	width: 45vw;
+	height: 35vh;
+	margin-top: 10vh;
+	vertical-align: text-top;
+	margin-left: 25vw;
+}
+
+.loc{
+	border: none;
+	background-color: transparent;
+	color: pink;
+	text-decoration: underline;
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 15px;
+
+}
+ 

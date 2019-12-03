@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--Constitutes the code that produces the welcome page of the app - the first thing the user sees. All classes used are defined in the style.css file-->
+<html lang="en">
+	<head>
+		<!-- This imports the style sheets used for the formatting of the page as well as the icons-->
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<!-- declares the view of the user depending on the type of device they're using-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, height=device-height,  initial-scale=1.0"/>
+
+
+		<title> Park And Go </title>
+	</head>
+	<!-- The frontpage includes a background images as well as 2 buttons, 
+		The "Sign Up" button leads the user to the register page where they can put in their information and create an account
+		The "Sign In" button leads the user to the login page where they can access their account -->
+	<body class="background">
+		<header class="h1Frontpage" >
+			<div>
+				<h1> Park and Go </h1>
+				<p class="pFront"> let's make parking simpler </p>
+			</div>	
+		</header>
+
+		<div >	
+			<button class="button" type="button" onclick="location.href='register.php'" value="Sign-Up">Sign Up</button><br>
+			<label class="labelFront buttonLab">New? Register for an account!</label><br>
+			<button class="button" type="button" onclick="location.href='signin.php'" value="Sign-In">Sign In</button><br>
+			<label class="labelFront buttonLab">Already a member? Login!</label>
+		</div>
+
+	</body>
+
+</html>
